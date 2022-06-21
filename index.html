@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>k.mohan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e02cbefcb5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <section id="banner">
+        <h2 class="logo">portfolio.</h2>
+        <div class="banner-text">
+            <h1>I'm Mohamed</h1>
+            <p> A full-stack web developer.</p>
+            <div class="banner-btn">
+                <a href="#Contact"><span></span>Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+<div id="sideNav">
+    <nav>
+        <ul>
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#About">ABOUT</a></li>
+            <li><a href="#Portfolio">PORTFOLIO</a></li>
+            <li><a href="#Contact">CONTACT</a></li>
+
+        </ul>
+    </nav>
+    <div id="menuBtn">
+        <img src="img/menu.png" id="menu">
+    </div>
+</div>
+
+    <!--ABOUT-->
+
+ <section id="About">
+        <div class="title-text">
+            <h2>ABOUT ME</h2>
+            <P>Iam a freelance front-end web developer, Iam passionate about creating and developing web interfaces with years of experience in web development. <br>I also make the website more interactive with web animations,  a responsive design makes your website accessible to all users, <br>regardless of their devices.</P>
+        </div>
+ </section>
+
+    <!--PORTFOLIO-->
+
+    <section id="Portfolio">
+        <div class="title-text">
+            <h2>PORTFOLIO</h2>
+        </div>
+        <div class="service-box">
+            <div class="single-port">
+                <img src="img/1.jpg">
+                <div class="overlay"></div>
+                <div class="single-port-desc">
+                    <h2>PROJECT 1</h2>
+                </div>
+            </div>
+            <div class="single-port">
+                <img src="img/2.jpg">
+                <div class="overlay"></div>
+                <div class="single-port-desc">
+                    <h2>PROJECT 2</h2>
+                </div>
+            </div>
+            <div class="single-port">
+                <img src="img/3.jpg">
+                <div class="overlay"></div>
+                <div class="single-port-desc">
+                    <h2>PROJECT 3</h2>
+                </div>
+            </div>
+            <div class="single-port">
+                <img src="img/4.jpg">
+                <div class="overlay"></div>
+                <div class="single-port-desc">
+                    <h2>PROJECT 4</h2>
+                </div>
+            </div>
+            <div class="single-port">
+                <img src="img/5.jpg">
+                <div class="overlay"></div>
+                <div class="single-port-desc">
+                    <h2>PROJECT 5</h2>
+                </div>
+            </div>
+            <div class="single-port">
+                <img src="img/6.jpg">
+                <div class="overlay"></div>
+                <div class="single-port-desc">
+                    <h2>PROJECT 6</h2>
+                </div>
+            </div>
+        </div>
+
+        <!--Contact-->
+    <section id="Contact">
+        <div class="text-title">
+            <h2>HIRE ME</h2>
+        </div>
+        <div class="row">
+            	  <form action="mail.php" method="POST">
+                      <div class="row-1">
+                          <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fas fa-user"></i>Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number"><i class="fas fa-phone-square-alt"></i>Phone No.</label>
+                </div>
+                      </div>
+                <div class="input-group">
+                    <input type="text" id="email" required>
+                    <label for="email"><i class="fas fa-envelope"></i>Email Id.</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="8" required></textarea>
+                    <label for="message"><i class="fas fa-comments"></i>your message</label>
+                </div>
+                <button type="submit"><i class="fas fa-paper-plane"></i>SUBMIT</button>
+                      <div class="social-links">
+                          <a href="https://www.facebook.com/mohamedmuse.mohamud.35" target="_blank"><i class="fa fa-facebook" ></i></a>
+                          <a href="https://www." target="_blank"><i class="fa fa-instagram" ></i></a>
+                          <a href="https://t.me/Anonymous_king_1" target="_blank"><i class="fa fa-telegram" ></i></a>
+
+                          <p>Copyright Mohamed. All rights reserved : 2022</p>
+                      </div>
+            </form>
+        </div>
+
+    </section>
+<script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right = "-250px";
+
+    menuBtn.onclick = function(){
+        if( sideNav.style.right == "-250px"){
+            sideNav.style.right = "0"
+            menu.src = "img/close.png";
+        }
+        else{
+            sideNav.style.right = "-250px"
+            menu.src = "img/menu.png";
+        }
+    }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+</script>
+</body>
+</html>
